@@ -1,0 +1,235 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+}
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(background.png.jpg); 
+    background-size: cover;
+    filter: blur(0.9px); 
+}
+  
+  
+  nav {
+    font-size: larger;
+    text-align: center;
+    background-color: #333; 
+    color: #000000;
+    padding: 15px 20px; 
+}
+  
+  nav a {
+    color: #fff; 
+    text-decoration: none;
+    margin-right: 75px; 
+    margin-left: 25px;
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+  
+  nav a:hover {
+    color: #4c85c3; 
+}
+  
+  .content {
+    text-align: center;
+    font-size:x-large;
+    color: #ffffff;
+    margin-top: 20px; 
+    padding: 20px;
+}
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 22px;
+    justify-content: space-around; 
+    padding: 22px;
+}
+  
+  .sub-container {
+    position: relative;
+    width: calc(33.33% - 20px); 
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+  .sub-container:hover {
+    transform: translateY(-5px);
+}
+  
+  .sub-container img {
+    width: 100%; 
+    display: block; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+  .sub-container:hover img {
+    transform: scale(1.05); 
+}
+
+  .sub-container::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: large; 
+    color: #fff; 
+    padding: 250px; 
+    border-radius: 5px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+  
+  .sub-container:hover::after {
+    opacity: 1;
+}
+
+  .occupation-dropdown {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+  .occupation-dropdown label {
+    font-weight: bold;
+    font-size: large;
+    margin-right: 10px;
+}
+  
+  .occupation-dropdown select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #5673c5;
+    border-radius: 5px;
+}
+
+  .occasion-dropdown{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+  .occasion-dropdown label {
+    font-weight: bold;
+    font-size: large;
+    margin-right: 10px;
+}
+  
+  .occasion-dropdown select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #5673c5;
+    border-radius: 5px;
+}
+
+.select-service{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.select-service button{
+    padding: 10px 20px;
+    border:none;
+    /* opacity: 0.7; */
+    outline: none;
+    border-radius: 10px;
+}
+
+.select-service select{
+    font-size: medium;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+   .Services{
+    color:#ffffff;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+   .Services-content{
+
+    color:#ffffff;
+    font-size: medium;
+    
+
+}
+.getinfo{
+    text-align: center;
+    margin: 10px;
+    /* text-align: start; */
+}
+.getinfo #name{
+    /* margin-left: 31px; */
+    text-align: justify;
+}
+.getinfo #phone{
+
+}
+
+.Services-content input{
+    opacity: 0.6;
+}
+
+.button{
+    margin-top: 15px;
+    
+}
+
+.button button{
+    font-size: medium;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+  
+  footer .profile,
+  footer .contact,
+  footer .address {
+    width: 30%;
+}
+  
+  footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+   
+    footer p {
+    font-size: 1rem;
+}
